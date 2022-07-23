@@ -6,7 +6,8 @@ body {
   /* Firefox */
   width: 100%;
   padding-bottom: 20px;
-background: #101121;
+  background: #101121;
+
   &::-webkit-scrollbar {
     background: #101121 !important;
     width: 5px;
@@ -79,19 +80,20 @@ background: #101121;
 .hero {
   width: 100%;
   height: 100vh;
-  background:transparent;
+  background: transparent;
   background-image: url("../public/images/hero3.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   // background-position: center;
- p{
-  position: absolute;
+  p {
+    position: absolute;
     width: 388px;
     height: 108px;
     left: 524px;
     top: 419px;
-  
+
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 300;
@@ -100,23 +102,40 @@ background: #101121;
     /* or 150% */
     text-align: center;
     color: #F5F5F8;
-    strong{
-        font-style: bold;
-          font-weight: 600;
+
+    strong {
+      font-style: bold;
+      font-weight: 600;
     }
- }
+  }
 
 }
 
-.mission{ 
- 
+.mission {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
-
-  
-  height: 216.5px; 
-
+  height: 300px;
+  padding-top:100px ; 
   background: transparent;
-    background-image: url("../public/images/misson.png");
+  background-image: url("../public/images/misson.png");
   box-shadow: 0.405772px 0.54103px 2.62908px rgba(8, 15, 29, 0.2);
-  // transform: matrix(0.85, 0.53, 0.53, -0.85, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: coloumn;
+  justify-content: center;
+  align-items: center;
+ p{
+  font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 66px;
+    /* identical to box height */
+  
+  
+    color: #FFFFFF;
+ }
+
 }

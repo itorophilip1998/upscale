@@ -2,8 +2,8 @@ import React from "react";
 
 function Mission() {
   return (
-    <div className="mission">
-      <p>Your Vision is Our Mission </p>
+    <div className="mission pt-5 ">
+      <p className="py-4">Your Vision is Our Mission </p>
     </div>
   );
 }
