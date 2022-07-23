@@ -1,12 +1,13 @@
 
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Mission from './components/Mission';
-import About from './components/About';
+import Mission from './components/Mission'; 
 import WhatWeDo from './components/WhatWeDo';
 import OurWorks from './components/OurWorks';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import About from './components/About';
+ 
 
 function App() {
   return (

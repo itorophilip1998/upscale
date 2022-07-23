@@ -22,6 +22,10 @@ body {
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
   }
+
+  .link {
+    cursor: pointer;
+  }
 }
 
 // header
@@ -111,10 +115,12 @@ body {
 
 }
 
+
+// nission
 .mission {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
   height: 300px;
-  padding-top:100px ; 
+  padding-top: 100px;
   background: transparent;
   background-image: url("../public/images/misson.png");
   box-shadow: 0.405772px 0.54103px 2.62908px rgba(8, 15, 29, 0.2);
@@ -126,16 +132,56 @@ body {
   flex-direction: coloumn;
   justify-content: center;
   align-items: center;
- p{
-  font-family: 'Oxygen';
+
+  p {
+    font-family: 'Oxygen';
     font-style: normal;
     font-weight: 700;
     font-size: 52px;
     line-height: 66px;
     /* identical to box height */
-  
-  
     color: #FFFFFF;
- }
+  }
 
+}
+
+
+
+// about
+.about {
+
+  
+}
+.about-box{
+.heading,
+  .body {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px; 
+    /* or 133% */
+  }
+
+  .body {
+    color: #3F3F3F;
+  }
+  .box{
+    position: absolute;
+      width: 5px;
+      height: 206px;
+      margin-left: -15px;
+      // top: 367px; 
+      background: #D9D9D9;
+      border-radius: 10px;
+  }
+  .side_text{
+    padding: 16px;
+    font-family: 'Didact Gothic';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px; 
+      color: #DDDDDD;
+  }
 }

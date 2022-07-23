@@ -8,7 +8,7 @@ function Hero() {
           Your professional agency for mobile and web based
           <strong> software development</strong>
         </div>
-        <img src="/images/arrow.png" alt="" className="mt-5" />
+        <img src="/images/arrow.png" alt="" className="mt-5 link" />
       </p>
     </div>
   );
