@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Mission() {
   return (
-    <div>Mission</div>
-  )
+    <div className="mission">
+      <p>Your Vision is Our Mission </p>
+    </div>
+  );
 }
 
-export default Mission
+export default Mission;
