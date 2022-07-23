@@ -5,7 +5,12 @@ import AboutBox from "./AboutBox";
 import { about as list } from "../../utils/db";
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about container" id="about">
+      <div className="headingText">
+        <img src="/images/Line 1.png" alt="" />
+        <img src="/images/logowhite.png" alt="" className="mx-2" />
+        ABOUT UPSCALE ADVISORY
+      </div>
       <Carousel
         autoPlay
         infiniteLoop
