@@ -45,3 +45,42 @@ export const whatwedo = [
         img: "Vector 13.png",
     }
 ]
+
+export const ourprocess = [
+    {
+        head: "Unbinding free consultation:",
+        text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
+        img: "line1.png",
+        isTop:true
+    },
+    {
+        head: "Kick off Meeting",
+        text:"Here we jointly record the requirements of your app and work out your initial concept in a detailed meeting. The technical requirements of the app, The UI/UX story  and the most suitable programming language to be used will be determined here.",
+        img: "line2.png",
+        isTop:true
+    },
+    {
+        head: "Sign Off of UI/UX Design",
+        text: "HOn the basis of the basic concept you provide us, we develop a very  detailed concept for your app using user stories, feasibility studies and our expert view.Brief meetings will be held for feedback during this. A first draft of the user interface is also created. You will receive the finished concept for approval before implementation of the app begins. ",
+        img: "line3.png",
+        isTop:true
+    },
+    {
+        head: "Execution and Testing",
+        text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
+        img: "line4.png",
+        isTop:false
+    },
+    {
+        head: "Publication",
+        text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
+        img: "line5.png",
+        isTop:false
+    },
+    {
+        head: "Continuous Support & Improvement",
+        text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
+        img: "line6.png",
+        isTop:false
+    },
+]
