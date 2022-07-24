@@ -446,7 +446,8 @@ form {
   padding-bottom: 6px;
   margin-bottom: 3rem;
   cursor: pointer;
-   background: transparent;
+  background: transparent;
+
   &:focus {
     border: 1px solid #0594D9;
     color: #0594D9;
@@ -464,6 +465,36 @@ form {
     color: #FFFFFF;
   }
 }
-.headInfo{
-  
+
+.headInfo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center; 
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  height: 100%;
+
+  span {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+ 
+    margin-bottom: 19px;
+    color: #DDDDDD;
+  }
+
+  h2 {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* or 150% */
+
+    color: #FFFFFF;
+  }
 }
