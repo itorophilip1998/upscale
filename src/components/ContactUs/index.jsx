@@ -3,7 +3,7 @@ import Form from "./Form";
 
 function ContactUs() {
   return (
-    <div className="contact" id="contact">
+    <div className="contact container " id="contact">
       <div className="about container">
         <div className="headingText">
           <img src="/images/Line 1.png" alt="" />
@@ -12,7 +12,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row ">
         <div className="col-md-4">
           <div className="headInfo">
             <span>Got any Project in Mind?</span>

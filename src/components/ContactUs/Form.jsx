@@ -6,17 +6,31 @@ function Form() {
       <span>Choose what you’d like to do</span>
 
       <form>
-        <input type="text" required className="name" placeholder="Name" />
-        <input type="email" required className="emal" placeholder="Email" />
-        <textarea
-          className="message"
-          required
-          id=""
-          placeholder="Tell Us What You’d Like to Do"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button>Send</button>
+        <div className="form-container">
+          <div className="input">
+            <label htmlFor="name">Name</label>
+            <input type="text" required className="name" />
+          </div>
+
+          <div className="input">
+            <label htmlFor="name">Email</label>
+
+            <input type="email" required className="emal " placeholder="" />
+          </div>
+
+          <div className="input">
+            <label htmlFor="name">Tell Us What You’d Like to Do</label>
+
+            <textarea
+              className="message"
+              required
+                          id=""  
+                          rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+        <button className="btn-send">Send</button>
       </form>
     </div>
   );
