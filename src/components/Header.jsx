@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <nav className="navbar navbar-expand-sm py-4  fixed-top ">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
             Advisory
           </a>
@@ -23,7 +23,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ml-auto ">
               <li className="nav-item active">
-                <a className="nav-link" href="#home">
+                <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
