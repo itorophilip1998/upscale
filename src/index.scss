@@ -8,7 +8,7 @@ body {
   padding-bottom: 20px;
   background: #101121;
 
- 
+
 
   .link {
     cursor: pointer;
@@ -16,22 +16,23 @@ body {
 
   // -webkit-tap-highlight-color:red !important;
 }
- ::-webkit-scrollbar {
-   background: #101121 !important;
-   width: 5px;
-  cursor: pointer;
- }
 
- /* Handle */
- ::-webkit-scrollbar-thumb {
-   border-radius: 40px;
-   background: #4b4e85;
-   -webkit-border-radius: 40px;
-   -moz-border-radius: 40px;
-   -ms-border-radius: 40px;
-   -o-border-radius: 40px;
-   cursor: pointer;
- }
+::-webkit-scrollbar {
+  background: #101121 !important;
+  width: 5px;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background: #4b4e85;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  cursor: pointer;
+}
 
 // header
 .header {
@@ -201,7 +202,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
+  }
 
   .side_text {
     padding: 16px;
@@ -378,18 +379,21 @@ form {
     width: 100%;
     display: block;
     margin-bottom: 10px;
-    color: #DDDDDD;
+    color: #999999;
 
     &:focus {
       box-shadow: none !important;
       outline: none !important;
       border-bottom: 1px solid #0594D9 !important;
-    
-    color: #0594D9;}
+
+      color: #0594D9;
+    }
   }
-input{
+
+  input {
     height: 40px;
-}
+  }
+
   label {
     font-family: 'Didact Gothic';
     font-style: normal;
@@ -409,4 +413,29 @@ input{
     resize: none;
 
   }
+}
+
+.btn-send {
+  gap: 10px;
+
+  position: absolute;
+  width: 170px;
+  height: 52px;
+  background: #0594D9;
+  border: 1px solid #0594D9;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.headForm {
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  text-align: center;
+  color: #DDDDDD;
+  
 }

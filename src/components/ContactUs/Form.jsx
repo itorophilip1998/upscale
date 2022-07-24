@@ -3,7 +3,7 @@ import React from "react";
 function Form() {
   return (
     <div className="form">
-      <span>Choose what you’d like to do</span>
+      <span className="headForm my-4">Choose what you’d like to do</span>
 
       <form>
         <div className="form-container">
@@ -21,16 +21,11 @@ function Form() {
           <div className="input">
             <label htmlFor="name">Tell Us What You’d Like to Do</label>
 
-            <textarea
-              className="message"
-              required
-                          id=""  
-                          rows="3"
-            ></textarea>
+            <textarea className="message" required id="" rows="3"></textarea>
           </div>
         </div>
 
-        <button className="btn-send">Send</button>
+        <button className="btn-send my-4">Send</button>
       </form>
     </div>
   );
