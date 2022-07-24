@@ -293,8 +293,63 @@ body {
 
     img {
       width: 320px;
-      height: 53  0px;
-      margin-right:5px ;
+      height: 53 0px;
+      margin-right: 5px;
     }
   }
+}
+
+.ourworkprocess-box {
+  .content {
+    text-align: left;
+    width: 80%;
+    height: 292px;
+
+    // background:red !important;
+    .header {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      /* or 150% */
+
+
+      color: #F5F5F8;
+    }
+
+    p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+      text-align: left;
+
+      color: #F5F5F8;
+    }
+  }
+
+  img {
+    width: 90%;
+  }
+
+
+  .bottomImg {
+    margin-top: -7rem;
+    margin-left: -1rem;
+  }
+
+  .topImg {
+    margin-top: 7rem;
+    margin-left: -1rem;
+  }
+
+  
+}
+.curveline {
+  position: absolute;
+  margin-top: -33rem;
+  margin-left:67rem;
 }
