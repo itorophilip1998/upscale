@@ -7,12 +7,12 @@ const list = [
 ];
 const Listchoice = () => {
   return (
-    <div className="d-flex">
+    <div className="row m-0 mt-5">
       {list &&
         list.map((item, key) => (
-          <div className="listedItem mr-auto" key={key}>
+          <button className="listedItem mr-auto " key={key}>
             <h3>{item}</h3>
-          </div>
+          </button>
         ))}
     </div>
   );
