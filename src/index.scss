@@ -35,19 +35,20 @@ body {
 }
 
 // header
+ .navbar-brand {
+   font-family: 'Oxygen';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15.6748px;
+   line-height: 20px;
+   /* identical to box height */
+   color: #F5F5F8 !important;
+ }
 .header {
   nav {
     background: #090a1c !important;
 
-    .navbar-brand {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15.6748px;
-      line-height: 20px;
-      /* identical to box height */
-      color: #F5F5F8;
-    }
+   
 
     li .nav-link {
       font-family: 'Oxygen';
@@ -497,4 +498,12 @@ form {
 
     color: #FFFFFF;
   }
+}
+
+.footer{
+  margin-top: 10rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+height: 331px;
+}
+ .br{ border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
