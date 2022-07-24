@@ -2,7 +2,7 @@ import React from "react";
 
 function WhatwedoBox({ item }) {
   return (
-    <div className="card-box">
+    <div className="card-box" data-aos="flip-down" data-aos-delay="">
       <div className="card-head">{item.head}</div>
       <img src={`/images/${item.img}`} alt="" className="card-name" />
 
