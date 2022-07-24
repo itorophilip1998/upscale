@@ -1,7 +1,6 @@
 import React from "react";
-
-function OurWorkProcess() {
-//   const list = [1, 2, 3, 4, 5];
+import { ourprocess as list } from "../../utils/db";
+function OurWorkProcess() { 
   return (
     <div className="ourwork ourworkprocess py-5 ">
       <h1 className="heading pt-3 ">OUR WORK PROCESS</h1>
@@ -9,7 +8,9 @@ function OurWorkProcess() {
         Our Works are very diverse and we work with several industries while
         giving top notch deliverables.
       </p>
-      
+      {list && list.map((item,key) => (
+        <Workp
+      ))}
     </div>
   );
 }
