@@ -68,7 +68,7 @@ export const ourprocess = [
     {
         head: "Execution and Testing",
         text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
-        img: "line4.png",
+        img: "line6.png",
         isTop:false
     },
     {
@@ -80,7 +80,7 @@ export const ourprocess = [
     {
         head: "Continuous Support & Improvement",
         text:"Leave us a message, send us an email or simply give us a call and arrange a personal non-binding consultation. Tell us about your project and ask us any questions that interest you. During this call,We will discuss how we can make your project work.",
-        img: "line6.png",
+        img: "line4.png",
         isTop:false
     },
 ]

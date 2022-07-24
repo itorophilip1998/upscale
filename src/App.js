@@ -6,8 +6,8 @@ import WhatWeDo from './components/WhatWeDO';
 import OurWorks from './components/OurWorks';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
-import About from './components/About';
-import OurWorkProcess from './components/OurWorksProcess';
+import About from './components/About'; 
+import OurWorkProcess from './components/OurWorkProcess';
  
 
 function App() {
