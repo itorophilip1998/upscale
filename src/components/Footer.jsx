@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
@@ -12,38 +12,38 @@ function Footer() {
         </div>
         <div className="col-md-3 br">
           <span className="headText">Offices</span>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <a href="/">Nigeria</a>
+          <ul className="mt-4">
+            <li className="my-5">
+              <img src="/images/location.png" alt="" />
+              <a href="/" className="nation"> Nigeria</a>
             </li>
             <li>
-              <img src="" alt="" />
-              <a href="/">Dusseldorf</a>
+              <img src="/images/discover.png" alt="" />
+              <a href="/" className="nation"> Dusseldorf</a>
             </li>
           </ul>
         </div>
         <div className="col-md-6">
           <span className="headText">Follow Us</span>
-          <ul>
-            <li>
+          <ul className="row m-0 mt-4">
+            <li className="mr-2">
               <a href="/">
-                <img src="" alt="" />
+                <img src="/images/instagram.png" alt="" />
               </a>
             </li>
-            <li>
+            <li className="mx-2">
               <a href="/">
-                <img src="" alt="" />
+                <img src="/images/Vector.png" alt="" />
               </a>
             </li>
-            <li>
+            <li className="mx-2">
               <a href="/">
-                <img src="" alt="" />
+                <img src="/images/Vector (5).png" alt="" />
               </a>
             </li>
-            <li>
+            <li className="mx-2">
               <a href="/">
-                <img src="" alt="" />
+                <img src="/images/Vector (6).png" alt="" />
               </a>
             </li>
           </ul>
@@ -53,4 +53,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

@@ -501,7 +501,7 @@ form {
 }
 
 .footer{
-  margin-top: 10rem;
+  margin-top: 14rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 
 }
@@ -510,8 +510,36 @@ form {
   height: 331px;
   padding: 3rem;
 }
-li{
-list-style: none;
+ul{
+  padding: 0px;
+  li {
+      list-style: none;
+    }
 }
  .br{ border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nation{
+  font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+  
+    text-align: center;
+  
+    color: #DDDDDD;
+}
+.headText{
+  font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+  
+    text-align: center;
+  
+    color: #DDDDDD;
 }
