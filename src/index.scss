@@ -437,5 +437,32 @@ form {
   /* identical to box height, or 200% */
   text-align: center;
   color: #DDDDDD;
-  
+
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+}
+.listedItem {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px 15px;
+  padding-bottom: 6px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid #0594D9;
+  }
+
+  h3 {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 171% */
+
+
+    color: #FFFFFF;
+  }
 }
