@@ -204,3 +204,37 @@ body {
     color: #DDDDDD;
   }
 }
+
+// .whatwedobox{
+//   display: flex;
+//   flex-direction: row;
+// }
+.card-box {
+  width: 322px;
+  height: 493px;
+  margin: 14px auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  .card-head {
+  font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */ 
+  padding: 40px;
+  height: 140px;
+    color: #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: break-spaces !important
+  }
+     img {
+       // position: absolute;
+       width: 36.13px;
+       height: 41.64px;
+       margin-top: -15rem;
+       margin-left: 16rem;
+     }
+}
