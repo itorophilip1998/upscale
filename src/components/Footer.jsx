@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className=" row m-0 ">
-        <div className="col-md-3 br text-right p-5">
+        <div className="col-md-3 br text-right ">
           <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
             Advisory
