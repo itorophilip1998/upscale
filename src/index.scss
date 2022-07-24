@@ -205,10 +205,13 @@ body {
   }
 }
 
-// .whatwedobox{
-//   display: flex;
-//   flex-direction: row;
-// }
+.border-bottom-box {
+  background: rgba(255, 255, 255, 0.07);
+  height: 1px;
+  width: 97.6%;
+  margin: 4rem auto;
+}
+
 .card-box {
   width: 322px;
   height: 493px;
@@ -216,25 +219,82 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
 
   .card-head {
-  font-family: 'Oxygen';
+    font-family: 'Oxygen';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    /* or 150% */ 
-  padding: 40px;
-  height: 140px;
+    /* or 150% */
+    padding: 40px;
+    height: 140px;
     color: #FFFFFF;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      word-break: break-word;
-        overflow-wrap: break-word;
-        white-space: break-spaces !important
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: break-spaces !important
   }
-     img {
-       // position: absolute;
-       width: 36.13px;
-       height: 41.64px;
-       margin-top: -15rem;
-       margin-left: 16rem;
-     }
+
+  img {
+    // position: absolute;
+    width: 36.13px;
+    height: 41.64px;
+    margin-top: -15rem;
+    margin-left: 17rem;
+  }
+
+  .card-text {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    padding: 20px 40px;
+
+
+    color: #DDDDDD;
+  }
+}
+
+.ourwork {
+  .heading {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    color: #F5F5F8;
+  }
+
+  p {
+    font-family: 'Didact Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    max-width: 327px;
+    margin: 17px auto;
+    text-align: center;
+    color: #DDDDDD;
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+
+    }
+
+    img {
+      width: 320px;
+      height: 53  0px;
+      margin-right:5px ;
+    }
+  }
 }

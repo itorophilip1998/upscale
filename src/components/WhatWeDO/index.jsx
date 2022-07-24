@@ -10,9 +10,13 @@ function WhatWeDo() {
         <img src="/images/logowhite.png" alt="" className="mx-2" />
         WHAT WE DO
       </div>
-      <div className='whatwedobox row'>
-        {list && list.map((item, key) => <WhatwedoBox item={item} key={key} className="col-md-4"/>)}
+      <div className="whatwedobox row">
+        {list &&
+          list.map((item, key) => (
+            <WhatwedoBox item={item} key={key} className="col-md-4" />
+          ))}
       </div>
+      <div className="border-bottom-box"></div>
     </div>
   );
 }
