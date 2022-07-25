@@ -27,8 +27,9 @@ function OurWorks() {
                 alt=""
                 onTouchMove={(e) => setIshover(item)}
                 onMouseOver={(e) => setIshover(item)}
-                onMouseLeave={(e) => setIshover(item)}
-                onMouseOut={(e) => setIshover(item)}
+                // onMouseLeave={(e) => setIshover(null)}
+                // onMouseOut={(e) => setIshover(null)}
+                onClick={(e) => setIshover(null)}
               />
               {item === isHover && (
                 <div className="overlay">
