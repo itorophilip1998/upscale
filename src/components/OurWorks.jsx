@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // /* eslint-disable */
 function OurWorks() {
   const list = [1, 2, 3, 4, 5];
-  const [isHover, setIshover] = useState(1);
+  const [isHover, setIshover] = useState(null);
   return (
     <div className="ourwork py-5 ">
       <h1 className="heading " data-aos="fade-right" data-aos-delay="200">
