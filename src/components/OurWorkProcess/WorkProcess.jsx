@@ -4,7 +4,12 @@ function WorkProcess({ item }) {
   return (
     <div className="ourworkprocess-box col-md-4">
       {!item.isTop && (
-        <img src={`/images/${item.img}`} alt="" className="topImg" />
+        <img
+          src={`/images/${item.img}`}
+          alt=""
+          data-aos="zoom-out"
+          className="topImg"
+        />
       )}
 
       <div className={`content ${item.isTop ? "ml-auto" : "mr-auto"}`}>
@@ -12,7 +17,12 @@ function WorkProcess({ item }) {
         <p>{item.text}</p>
       </div>
       {item.isTop && (
-        <img src={`/images/${item.img}`} alt="" className="bottomImg" />
+        <img
+          src={`/images/${item.img}`}
+          alt=""
+          data-aos="zoom-out"
+          className="bottomImg"
+        />
       )}
     </div>
   );

@@ -14,14 +14,14 @@ function ContactUs() {
 
       <div className="row ">
         <div className="col-md-4">
-          <div className="headInfo">
+          <div className="headInfo" data-aos="fade-left" data-aos-delay="600">
             <span>Got any Project in Mind?</span>
             <h2>Schedule a Free Consultation.</h2>
           </div>
         </div>
 
         <div className="col-md-8">
-          <Form/>
+          <Form />
         </div>
       </div>
     </div>

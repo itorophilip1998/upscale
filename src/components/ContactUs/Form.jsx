@@ -10,7 +10,7 @@ const Listchoice = () => {
     <div className="row m-0 mt-5">
       {list &&
         list.map((item, key) => (
-          <button className="listedItem mr-auto " key={key}>
+          <button className="listedItem mr-auto " data-aos="zoom-in" data-aos-delay="600" key={key}>
             <h3>{item}</h3>
           </button>
         ))}
@@ -20,7 +20,7 @@ const Listchoice = () => {
 
 function Form() {
   return (
-    <div className="form">
+    <div className="form" data-aos="fade-right" data-aos-delay="400">
       <span className="headForm my-4">Choose what you’d like to do</span>
       <Listchoice />
       <form>
