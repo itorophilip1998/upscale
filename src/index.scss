@@ -35,20 +35,19 @@ body {
 }
 
 // header
- .navbar-brand {
-   font-family: 'Oxygen';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 15.6748px;
-   line-height: 20px;
-   /* identical to box height */
-   color: #F5F5F8 !important;
- }
+.navbar-brand {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.6748px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #F5F5F8 !important;
+}
+
 .header {
   nav {
     background: #090a1c !important;
-
-   
 
     li .nav-link {
       font-family: 'Oxygen';
@@ -96,14 +95,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   // background-position: center;
   p {
     position: absolute;
     width: 388px;
     height: 108px;
-    left: 524px;
     top: 419px;
+
 
     font-family: 'Oxygen';
     font-style: normal;
@@ -242,7 +244,17 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     word-break: break-word;
     overflow-wrap: break-word;
-    white-space: break-spaces !important
+
+    white-space: break-spaces !important;
+
+    &:hover {
+      border-bottom: 1px solid #086FBC;
+    }
+  }
+
+  &:hover {
+    border: 1px solid #086FBC;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.05);
   }
 
   img {
@@ -259,12 +271,13 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    /* or 200% */
     padding: 20px 40px;
-
-
     color: #DDDDDD;
   }
+}
+
+.card-box:hover .card-head {
+  border-bottom: 1px solid #086FBC;
 }
 
 .ourwork {
@@ -296,20 +309,64 @@ body {
     flex-direction: row;
     width: 100%;
     overflow-x: scroll;
+    overflow-y: none;
 
     &::-webkit-scrollbar {
       display: none;
 
     }
 
+  
+
     img {
-      width: 320px;
-      height: 53 0px;
+      width: 346px;
+      height: 500px !important;
       margin-right: 5px;
     }
+
+
+    .overlay {
+      position: absolute;
+      width: 347px;
+      height: 501px !important;
+      margin-left: -1px;
+      margin-top: -31.3rem;
+      background: rgba(23, 25, 28, 0.87);
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      // display: none;
+      // z-index: 100px !important;
+
+      h1 {
+        font-family: 'Oxygen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        width: 112px;
+
+        color: #F5F5F8;
+      }
+
+      p {
+        font-family: 'Didact Gothic';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        /* or 200% */
+
+
+        color: #DDDDDD;
+      }
+    }
+   
   }
 }
-
+ 
 .ourworkprocess-box {
   .content {
     text-align: left;
@@ -470,7 +527,7 @@ form {
 .headInfo {
   display: flex;
   flex-direction: column;
-  justify-items: center; 
+  justify-items: center;
   align-self: center;
   justify-content: center;
   justify-self: center;
@@ -483,7 +540,7 @@ form {
     font-size: 18px;
     line-height: 32px;
     /* identical to box height, or 178% */
- 
+
     margin-bottom: 19px;
     color: #DDDDDD;
   }
@@ -500,46 +557,52 @@ form {
   }
 }
 
-.footer{
+.footer {
   margin-top: 14rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 
 }
 
-.col-md-3,.col-md-6{
+.col-md-3,
+.col-md-6 {
   height: 331px;
   padding: 3rem;
 }
-ul{
+
+ul {
   padding: 0px;
+
   li {
-      list-style: none;
-    }
-}
- .br{ border-right: 1px solid rgba(255, 255, 255, 0.05);
+    list-style: none;
+  }
 }
 
-.nation{
-  font-family: 'Didact Gothic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    /* identical to box height, or 200% */
-  
-    text-align: center;
-  
-    color: #DDDDDD;
+.br {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
-.headText{
+
+.nation {
   font-family: 'Didact Gothic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    /* identical to box height, or 178% */
-  
-    text-align: center;
-  
-    color: #DDDDDD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+
+  text-align: center;
+
+  color: #DDDDDD;
+}
+
+.headText {
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  text-align: center;
+
+  color: #DDDDDD;
 }

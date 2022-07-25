@@ -1,7 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+// /* eslint-disable */
 function OurWorks() {
-  const list=[1,2,3,4,5]
+  const list = [1, 2, 3, 4, 5];
+  const [isHover, setIshover] = useState(1);
   return (
     <div className="ourwork py-5 ">
       <h1 className="heading " data-aos="fade-right" data-aos-delay="200">
@@ -14,13 +15,31 @@ function OurWorks() {
       <div className="img-box pt-4">
         {list &&
           list.map((item, key) => (
-            <img
-              src={`/images/img${item}.png`}
-              data-aos="zoom-out"
-              data-aos-delay="600"
-              alt=""
+            <div
               key={key}
-            />
+              // style={{ background: `url(/images/img${item}.png)` }}
+              className="img-div "
+            >
+              <img
+                src={`/images/img${item}.png`}
+                data-aos="zoom-out"
+                data-aos-delay="600"
+                alt=""
+                onTouchMove={(e) => setIshover(item)}
+                onMouseOver={(e) => setIshover(item)}
+                onMouseLeave={(e) => setIshover(item)}
+                onMouseOut={(e) => setIshover(item)}
+              />
+              {item === isHover && (
+                <div className="overlay">
+                  <h1>Excercise App</h1>
+                  <p className="text-left">
+                    This App was designed and built for a Client to enable users
+                    have good excercise routines.
+                  </p>
+                </div>
+              )}
+            </div>
           ))}
       </div>
     </div>
