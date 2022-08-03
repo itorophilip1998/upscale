@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <div className="header">
-      <nav className="navbar navbar-expand-sm py-4  fixed-top ">
+      <nav className="navbar navbar-expand-sm py-4 navbar-dark  fixed-top ">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
@@ -18,7 +18,7 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon text-white"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ml-auto ">

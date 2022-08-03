@@ -1,10 +1,10 @@
 // body
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  width: 100%;
+  width: 100% !important;
   padding-bottom: 20px;
   background: #101121;
 
@@ -604,4 +604,83 @@ ul {
   text-align: center;
 
   color: #DDDDDD;
+}
+
+.footer-upscale {
+  color: #DDDDDD;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    p {
+      font-family: 'Oxygen';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .footer {
+    .pick-footer {
+      height: 50px;
+
+
+    }
+
+    .headText {
+      text-align: center !important;
+    }
+
+    .follow {
+      height: 150px !important;
+
+      li {
+        margin: 10px auto;
+      }
+    }
+
+    .footer-upscale {
+      text-align: center;
+      position: relative;
+      margin-top: 15px;
+      padding-bottom: 30px;
+      display: block;
+    }
+
+
+  }
+
+  form .form-container {
+    border: none;
+    padding: 0px;
+  }
+
+  .listedItem {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 18px 15px;
+    padding-bottom: 6px;
+    margin-bottom: 1rem;
+
+    h3 {
+      font-size: 12px !important;
+    }
+  }
+
+  .headInfo h2 {
+    font-size: 24px;
+    margin: 10px;
+  }
 }

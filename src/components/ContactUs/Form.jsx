@@ -21,7 +21,7 @@ const Listchoice = () => {
 function Form() {
   return (
     <div className="form" data-aos="fade-right" data-aos-delay="400">
-      <span className="headForm my-4">Choose what you’d like to do</span>
+      <span className="headForm my-4 d-none d-md-block text-left">Choose what you’d like to do</span>
       <Listchoice />
       <form>
         <div className="form-container">
@@ -37,7 +37,7 @@ function Form() {
           </div>
 
           <div className="input">
-            <label htmlFor="name">Tell Us What You’d Like to Do</label>
+            <label htmlFor="name" className="text-left">Tell Us What You’d Like to Do</label>
 
             <textarea
               className="message border-0"
@@ -48,7 +48,8 @@ function Form() {
           </div>
         </div>
 
-        <button className="btn-send my-4">Send</button>
+        <button className="btn-send my-4 d-block d-md-none w-100">Send</button>
+        <button className="btn-send my-4 d-none d-md-block">Send</button>
       </form>
     </div>
   );

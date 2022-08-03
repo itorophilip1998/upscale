@@ -20,14 +20,14 @@ function App() {
   }, [])
   return (
     <div className=''>
-      <Header />
-      <Hero />
-      <Mission />
-      <About />
-      <WhatWeDo />
-      <OurWorks />
+      {/* <Header /> */}
+      {/* <Hero /> */}
+      {/* <Mission /> */}
+      {/* <About /> */}
+      {/* <WhatWeDo /> */}
+      {/* <OurWorks /> */}
       <OurWorkProcess/>
-      <ContactUs />
+      <ContactUs /> 
       <ScrollToTop smooth color="white" className="bg-transparent"/>
 
       <Footer />
