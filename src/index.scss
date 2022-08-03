@@ -621,7 +621,7 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-.ourwork .img-box .overlay {
+  .ourwork .img-box .overlay {
     position: absolute;
     width: 321.6px;
     height: 250px !important;
@@ -634,6 +634,7 @@ ul {
     justify-content: center;
     cursor: pointer;
   }
+
   .hero {
     p {
       font-family: 'Oxygen';
@@ -703,21 +704,29 @@ ul {
     position: absolute;
 
   }
-    .about-box .box{
-      display: none;
-    }
-    .slide_text{
-      font-size: 14px;
-    }
-        .about-box .heading,
-        .about-box .body{
-          font-size: 20px;
-            line-height: 30px;
-  color: #DDDDDD
-        }
+
+  .about-box .box {
+    display: none;
+  }
+
+  .slide_text {
+    font-size: 14px;
+  }
+
+  .about-box .heading,
+  .about-box .body {
+    font-size: 20px;
+    line-height: 30px;
+    color: #DDDDDD
+  }
+
+  .about-box .rounder {
+    width: 120px !important;
+    height: 40px !important;
+    margin-left: 70px;
+  }
 }
 
 .text-vite {
   color: #DDDDDD
 }
- 
