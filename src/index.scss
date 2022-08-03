@@ -1,4 +1,15 @@
 // body
+
+.h {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, .5);
+  border: none !important;
+}
+
 body {
   overflow-x: hidden !important;
   /* IE and Edge */
@@ -759,7 +770,7 @@ ul {
   }
 
   .card-box {
-    width: 98%;
+    width: 100%;
   }
 
 }

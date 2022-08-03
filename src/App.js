@@ -19,7 +19,7 @@ function App() {
     AOS.refresh();
   }, [])
   return (
-    <div className=''>
+    <div className='m-0 p-0 h'>
       <Header />
       <Hero />
       <Mission />
