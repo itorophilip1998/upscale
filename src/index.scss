@@ -703,8 +703,21 @@ ul {
     position: absolute;
 
   }
+    .about-box .box{
+      display: none;
+    }
+    .slide_text{
+      font-size: 14px;
+    }
+        .about-box .heading,
+        .about-box .body{
+          font-size: 20px;
+            line-height: 30px;
+  color: #DDDDDD
+        }
 }
 
 .text-vite {
   color: #DDDDDD
 }
+ 
