@@ -716,9 +716,10 @@ ul {
     line-height: 30px;
     color: #DDDDDD
   }
-        .about-box .side_text {
-      font-size: 14px !important;
-    }
+
+  .about-box .side_text {
+    font-size: 14px !important;
+  }
 
   .about-box .rounder {
     width: 120px !important;
@@ -755,6 +756,10 @@ ul {
       height: 108px;
       top: 250px;
     }
+  }
+
+  .card-box {
+    width: 98%;
   }
 
 }
