@@ -12,7 +12,7 @@ function OurWorks() {
         Our Works are very diverse and we work with several industries while
         giving top notch deliverables.
       </p>
-      <div className="img-box pt-4">
+      <div className="img-box pt-4 ">
         {list &&
           list.map((item, key) => (
             <div
@@ -40,6 +40,15 @@ function OurWorks() {
                   </p>
                 </div>
               )}
+             
+                <div className="overlay overlay2 d-md-none">
+                  <h1>Excercise App</h1>
+                  <p className="text-left">
+                    This App was designed and built for a Client to enable users
+                    have good excercise routines.
+                  </p>
+                </div>
+            
             </div>
           ))}
       </div>

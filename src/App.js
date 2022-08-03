@@ -25,7 +25,7 @@ function App() {
       {/* <Mission /> */}
       {/* <About /> */}
       {/* <WhatWeDo /> */}
-      {/* <OurWorks /> */}
+      <OurWorks />
       <OurWorkProcess/>
       <ContactUs /> 
       <ScrollToTop smooth color="white" className="bg-transparent"/>

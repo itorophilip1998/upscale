@@ -20,7 +20,7 @@ const Listchoice = () => {
 
 function Form() {
   return (
-    <div className="form" data-aos="fade-right" data-aos-delay="400">
+    <div className="form m-0" data-aos="fade-right" data-aos-delay="400">
       <span className="headForm my-4 d-none d-md-block text-left">Choose what you’d like to do</span>
       <Listchoice />
       <form>

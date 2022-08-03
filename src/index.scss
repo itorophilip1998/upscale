@@ -309,7 +309,8 @@ body {
     flex-direction: row;
     width: 100%;
     overflow-x: scroll;
-    overflow-y: none;
+    overflow-y: hidden !important;
+    margin: 0;
 
     &::-webkit-scrollbar {
       display: none;
@@ -620,6 +621,19 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
+.ourwork .img-box .overlay {
+    position: absolute;
+    width: 321.6px;
+    height: 250px !important;
+    margin-left: -1px;
+    margin-top: -15.6rem;
+    background: rgba(23, 25, 28, 0.87);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
   .hero {
     p {
       font-family: 'Oxygen';
@@ -683,7 +697,14 @@ ul {
     font-size: 24px;
     margin: 10px;
   }
+
+
+  .overlay {
+    position: absolute;
+
+  }
 }
-.text-vite{
-  color:#DDDDDD
+
+.text-vite {
+  color: #DDDDDD
 }

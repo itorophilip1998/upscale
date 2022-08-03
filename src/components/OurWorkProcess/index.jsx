@@ -5,7 +5,7 @@ import WorkProcessMobile from "./WorkProcessMobile";
 function OurWorkProcess() {
   return (
     <div className=" ourworkprocess  container py-5 ">
-      <div className="ourwork">
+      <div className="ourwork mb-md-5">
         <h1
           className="heading pt-3 "
           data-aos="fade-right"

@@ -2,7 +2,7 @@ import React from "react";
 
 function WorkProcess({ item }) {
   return (
-    <div className="ourworkprocess-box col-lg-4 md-6 d-md-block d-none">
+    <div className="ourworkprocess-box col-lg-4  d-md-block d-none">
       {!item.isTop && (
         <img
           src={`/images/${item.img}`}

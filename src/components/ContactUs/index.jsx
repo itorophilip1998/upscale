@@ -12,7 +12,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="row ">
+      <div className="row m-0">
         <div className="col-md-4">
           <div className="headInfo" data-aos="fade-left" data-aos-delay="600">
             <span>Got any Project in Mind?</span>
