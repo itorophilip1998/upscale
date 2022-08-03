@@ -709,9 +709,6 @@ ul {
     display: none;
   }
 
-  .slide_text {
-    font-size: 14px;
-  }
 
   .about-box .heading,
   .about-box .body {
@@ -719,6 +716,9 @@ ul {
     line-height: 30px;
     color: #DDDDDD
   }
+        .about-box .side_text {
+      font-size: 14px !important;
+    }
 
   .about-box .rounder {
     width: 120px !important;
