@@ -17,6 +17,13 @@ function Footer() {
               <img src="/images/location.png" alt="" />
               <a href="/" className="nation">
                 {" "}
+                Neitherland
+              </a>
+            </li>
+            <li className="my-5">
+              <img src="/images/location.png" alt="" />
+              <a href="/" className="nation">
+                {" "}
                 Nigeria
               </a>
             </li>
