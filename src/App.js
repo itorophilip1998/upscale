@@ -20,9 +20,9 @@ function App() {
   }, [])
   return (
     <div className=''>
-      {/* <Header /> */}
-      {/* <Hero /> */}
-      {/* <Mission /> */}
+      <Header />
+      <Hero />
+      <Mission />
       <About />
       <WhatWeDo />
       <OurWorks />
