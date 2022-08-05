@@ -1,17 +1,30 @@
-import React,{useEffect} from "react";
+import React, { useEffect, useState } from "react";
 
 function AboutBox(props) {
-  let item = props?.item[0];
+  const [item, setItem] = useState(props?.item[0]);
   useEffect(() => {
-      
-  }, [])
+    setItem(props?.item[0]);
+  }, []);
+  let pushState = (state) => {
+    console.log(state);
+  };
   return (
     <div className="about-box py-md-5 p-md-4 text-left mt-4 ">
       <div className="row m-0 py-3">
         <div className="col-md-5 p-0 p-md-2">
           <img src={`/images/${item.img}.png`} alt="" className="rounder " />
-          <h1 className="heading text-white link head1">{item.head}</h1>
-          <h1 className="body pt-4 d-none d-md-block link head2">{item.body}</h1>
+          <h1
+            onClick={(e) => pushState(item.key)}
+            className="heading text-white link head1"
+          >
+            {item.head}
+          </h1>
+          <h1
+            className="body pt-4 d-none d-md-block link head2"
+            onClick={(e) => pushState(item.key)}
+          >
+            {item.body}
+          </h1>
         </div>
         <div className="col-md-7 p-0">
           <div className="box p-0"></div>

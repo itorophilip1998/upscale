@@ -27,7 +27,7 @@ const About = () => {
           list.map((item, key) => <AboutBoxMobile item={item} key={key} />)}
       </Carousel>
 
-      <div className="desktopviewAbout">
+      <div className="desktopviewAbout d-none d-md-block">
         <AboutBox item={list} />
       </div>
     </div>
