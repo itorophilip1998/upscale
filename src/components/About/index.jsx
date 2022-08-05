@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import AboutBox from "./AboutBox";
 import { about as list } from "../../utils/db";
+import AboutBoxMobile from "./AboutBoxMobile";
 const About = () => {
   return (
     <div className="about container" id="about">
@@ -22,8 +23,13 @@ const About = () => {
         interval={3000}
         className="d-md-none"
       >
-        {list && list.map((item, key) => <AboutBox item={item} key={key} />)}
+        {list &&
+          list.map((item, key) => <AboutBoxMobile item={item} key={key} />)}
       </Carousel>
+
+      <div className="desktopviewAbout">
+        <AboutBox item={list} />
+      </div>
     </div>
   );
 };

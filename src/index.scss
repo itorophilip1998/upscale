@@ -780,3 +780,23 @@ ul {
 .text-vite {
   color: #DDDDDD
 }
+
+.link {
+  cursor: pointer;
+}
+
+.head2 {
+  &:hover {
+    color: #DDDDDD;
+  }
+}
+
+.text-muted {
+
+  color: #3F3F3F !important;
+
+}
+
+.text-light{
+    color: #DDDDDD ;
+}
