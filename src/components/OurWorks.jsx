@@ -24,7 +24,6 @@ function OurWorks() {
                 src={`/images/img${item}.png`}
                 data-aos="zoom-out"
                 data-aos-delay="600"
-                
                 alt=""
                 onTouchMove={(e) => setIshover(item)}
                 onMouseOver={(e) => setIshover(item)}
@@ -33,23 +32,25 @@ function OurWorks() {
                 onClick={(e) => setIshover(null)}
               />
               {item === isHover && (
-                <div className="overlay">
+                <div
+                  className="overlay"
+                  data-aos="zoom-out" 
+                >
                   <h1>Excercise App</h1>
                   <p className="text-left">
                     This App was designed and built for a Client to enable users
                     have good excercise routines.
                   </p>
                 </div>
-              )} 
-             
-                {/* <div className="overlay overlay2 d-md-none">
+              )}
+
+              {/* <div className="overlay overlay2 d-md-none">
                   <h1>Excercise App</h1>
                   <p className="text-left">
                     This App was designed and built for a Client to enable users
                     have good excercise routines.
                   </p>
                 </div> */}
-            
             </div>
           ))}
       </div>
