@@ -328,63 +328,62 @@ body {
       display: none;
     }
 
-.img-div{
+    .img-div {
 
-    // img {
+      // img {
       width: 320px;
       height: 500px !important;
-      margin-right: 5px;
+      margin-right: 7px;
       display: flex;
       flex-direction: column;
       cursor: pointer;
-      // padding: 10px;
-      
-    // }
-    // img{
-      // width: 100%;
-      // height: 100%;
-    // }
 
-
-    .overlay {
-      position: absolute;
-      width: 321px;
-      height: 501px !important;
-      margin-left: -1px;
-      margin-top: -31.3rem;
-      background: rgba(23, 25, 28, 0.87);
-      padding: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      cursor: pointer;
-      // display: none;
-      // z-index: 100px !important;
-
-      h1 {
-        font-family: 'Oxygen';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
-        width: 112px;
-
-        color: #F5F5F8;
+      // }
+      img {
+        z-index: 1 !important;
+        // display: none;
       }
 
-      p {
-        font-family: 'Didact Gothic';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        /* or 200% */
+
+      .overlay {
+        // position: absolute;
+        width: 321px;
+        height: 501px !important;
+        margin-left: -1px;
+        margin-top: -31.3rem;
+        background: rgba(23, 25, 28, 0.87);
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        // display: none;
+        z-index: 2 !important;
+
+        h1 {
+          font-family: 'Oxygen';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          width: 112px;
+
+          color: #F5F5F8;
+        }
+
+        p {
+          font-family: 'Didact Gothic';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          /* or 200% */
 
 
-        color: #DDDDDD;
+          color: #DDDDDD;
+        }
       }
     }
-  }
   }
 }
 
@@ -807,8 +806,8 @@ ul {
 
 }
 
-.text-light{
-    color: #DDDDDD ;
+.text-light {
+  color: #DDDDDD;
 }
 
  

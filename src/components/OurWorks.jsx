@@ -40,7 +40,7 @@ function OurWorks() {
                     have good excercise routines.
                   </p>
                 </div>
-              )}
+              )} 
              
                 {/* <div className="overlay overlay2 d-md-none">
                   <h1>Excercise App</h1>
