@@ -14,10 +14,7 @@ function AboutBox(props) {
       <div className="row m-0 py-3">
         <div className="col-md-5 p-0 p-md-2">
           <img src={`/images/${item.img}.png`} alt="" className="rounder " />
-          <h1 
-            className="heading text-white  head1"
-            data-oas="fade-up"
-          >
+          <h1 className="heading text-white  head1" data-oas="fade-up">
             {item.head}
           </h1>
           <h1
@@ -30,7 +27,10 @@ function AboutBox(props) {
         </div>
         <div className="col-md-7 p-0">
           <div className="box p-0"></div>
-          <p className="side_text mt-4 p-0 pl-4 pt-4" data-oas="fade-left">
+          <p
+            className="side_text slide_text_animation mt-4 p-0 pl-4 pt-4"
+            data-oas="fade-left" 
+          >
             {item.side_text}
           </p>
         </div>
