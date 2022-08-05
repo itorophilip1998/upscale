@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+/* eslint-disable */
 
 const list = [
   "Front-End Development",

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-
+/* eslint-disable */
 function AboutBox(props) {
   const [item, setItem] = useState(props?.item[0]);
   useEffect(() => {
     setItem(props?.item[0]);
-  }, []);
+  }, []); 
   let pushState = (state) => {
     if (state === 0) setItem(props?.item[1]);
     else setItem(props?.item[0]);
