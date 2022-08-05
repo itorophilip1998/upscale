@@ -30,7 +30,7 @@ export const whatwedo = [
         img: "Vector 10.png",
     }
     , {
-        head: "Process Automation",
+        head: `Process \nAutomation`,
         text: "Using methods of Robotic process automation, we can transform your complex business process to work with just a click of a button thereby improving your speed and quality of your service delivery.",
         img: "Vector 11.png",
     }

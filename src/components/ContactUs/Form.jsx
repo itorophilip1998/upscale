@@ -39,7 +39,7 @@ function Form() {
   };
   const setOption = (item) => {
     let message = document.getElementById("message");
-    message.value += " " + item;
+    // message.value += " " + item;
     console.log(message.value)
   }
   return (
@@ -97,7 +97,7 @@ function Form() {
             </label>
 
             <textarea
-              className="message border-0"
+              className="message"
               required
               id=""
               rows="3"

@@ -12,8 +12,8 @@ function WorkProcess({ item }) {
         />
       )}
 
-      <div className={`content  ${item.isTop ? "ml-auto mb-4" : "mr-auto "}`}>
-        <h2 className="header ">{item.head}</h2>
+      <div className={`content  ${item.isTop ? "ml-auto mb-5" : "mr-auto "}`}>
+        <h2 className="header font-weight-bold">{item.head}</h2>
         <p>{item.text}</p>
       </div>
       {item.isTop && (

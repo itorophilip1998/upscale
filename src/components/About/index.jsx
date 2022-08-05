@@ -20,6 +20,7 @@ const About = () => {
         showThumbs={false}
         showArrows={false}
         interval={3000}
+        className="d-md-none"
       >
         {list && list.map((item, key) => <AboutBox item={item} key={key} />)}
       </Carousel>

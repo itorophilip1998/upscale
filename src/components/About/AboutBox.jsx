@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutBox({ item }) {
   return (
-    <div className="about-box py-md-5 p-md-4 text-left mt-4">
+    <div className="about-box py-md-5 p-md-4 text-left mt-4 ">
       <div className="row m-0 py-3">
         <div className="col-md-5 p-0 p-md-2">
           <img src={`/images/${item.img}.png`} alt="" className="rounder " />
