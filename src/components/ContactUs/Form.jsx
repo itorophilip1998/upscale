@@ -84,11 +84,24 @@ function Form() {
             <input
               type="email"
               required
-              className="emal "
+              className="email "
               placeholder=""
               name="user_email"
               onChange={setFormData}
               value={form.user_email}
+            />
+          </div>
+          <div className="input">
+            <label htmlFor="user_phone">Phone</label>
+
+            <input
+              type="text"
+              required
+              className="phone "
+              placeholder=""
+              name="user_phone"
+              onChange={setFormData}
+              value={form.user_phone}
             />
           </div>
 

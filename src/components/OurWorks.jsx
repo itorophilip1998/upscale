@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 // /* eslint-disable */
+import { imgList } from "../utils/db.js";
 function OurWorks() {
-  const list = [1, 2, 3, 4, 5];
+  const list = imgList;
+  // console.log(list)
   const [isHover, setIshover] = useState(null);
   return (
     <div className="ourwork py-5 ">
@@ -9,48 +11,28 @@ function OurWorks() {
         OUR WORKS
       </h1>
       <p data-aos="fade-left" data-aos-delay="400">
-        Our Works are very diverse and we work with several industries while
-        giving top notch deliverables.
+        Below you may find some of the applications we have successfully
+        delivered to clients in the Netherlands and Germany.
       </p>
       <div className="img-box pt-4 ">
         {list &&
           list.map((item, key) => (
-            <div
-              key={key}
-              // style={{ background: `url(/images/img${item}.png)` }}
-              className="img-div "
-            >
+            <div key={key} className="img-div ">
               <img
-                src={`/images/img${item}.png`}
+                src={`/images/img${key + 1}.png`}
                 data-aos="zoom-out"
                 data-aos-delay="600"
                 alt=""
                 onTouchMove={(e) => setIshover(item)}
                 onMouseOver={(e) => setIshover(item)}
-                // onMouseLeave={(e) => setIshover(null)}
-                // onMouseOut={(e) => setIshover(null)}
                 onClick={(e) => setIshover(null)}
               />
               {item === isHover && (
-                <div
-                  className="overlay"
-                  data-aos="zoom-out" 
-                >
-                  <h1>Excercise App</h1>
-                  <p className="text-left">
-                    This App was designed and built for a Client to enable users
-                    have good excercise routines.
-                  </p>
+                <div className="overlay" data-aos="zoom-out">
+                  <h5 className="text-white">{item.title}</h5>
+                  <p className="text-left">{item.body}</p>
                 </div>
               )}
-
-              {/* <div className="overlay overlay2 d-md-none">
-                  <h1>Excercise App</h1>
-                  <p className="text-left">
-                    This App was designed and built for a Client to enable users
-                    have good excercise routines.
-                  </p>
-                </div> */}
             </div>
           ))}
       </div>

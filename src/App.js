@@ -27,7 +27,7 @@ function App() {
       <WhatWeDo />
       <OurWorks />
       <OurWorkProcess/>
-      <ContactUs /> 
+      <ContactUs />  
       <ScrollToTop smooth color="white" className="bg-transparent"/>
       <Footer />
     </div>

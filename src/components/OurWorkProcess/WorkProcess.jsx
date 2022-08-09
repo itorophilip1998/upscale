@@ -1,15 +1,19 @@
 import React from "react";
 
-function WorkProcess({ item }) {
+function WorkProcess({ item, index }) {
   return (
     <div className="ourworkprocess-box col-lg-4  d-md-block d-none">
       {!item.isTop && (
-        <img
-          src={`/images/${item.img}`}
-          alt=""
-          data-aos="zoom-out"
-          className="topImg "
-        />
+        <>
+          <div className="items-index ">{index + 1}</div>
+
+          <img
+            src={`/images/${item.img}`}
+            alt=""
+            data-aos="zoom-out"
+            className="topImg "
+          />
+        </>
       )}
 
       <div className={`content  ${item.isTop ? "ml-auto mb-5" : "mr-auto "}`}>
@@ -17,12 +21,15 @@ function WorkProcess({ item }) {
         <p>{item.text}</p>
       </div>
       {item.isTop && (
+        // <>
+
         <img
           src={`/images/${item.img}`}
           alt=""
           data-aos="zoom-out"
           className="bottomImg"
         />
+        // </>
       )}
     </div>
   );

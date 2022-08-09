@@ -2,8 +2,8 @@ import React from "react";
 /* eslint-disable */
 function Header() {
   return (
-    <div className="header">
-      <nav className="navbar navbar-expand-sm py-4 navbar-dark  fixed-top ">
+    <div className="header w-100">
+      <nav className="navbar navbar-expand-sm py-4 navbar-dark  fixed-top w-100">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
