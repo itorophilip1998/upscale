@@ -17,15 +17,19 @@ function OurWorks() {
       <div className="img-box pt-4 ">
         {list &&
           list.map((item, key) => (
-            <div key={key} className="img-div ">
+            <div
+              key={key}
+              className="img-div "
+              onTouchMove={(e) => setIshover(item)}
+              onMouseOver={(e) => setIshover(item)}
+              onClick={(e) => setIshover(item)}
+              onMouseLeave={(e) => setIshover(null)}
+            >
               <img
                 src={`/images/img${key + 1}.png`}
                 data-aos="zoom-out"
                 data-aos-delay="600"
                 alt=""
-                onTouchMove={(e) => setIshover(item)}
-                onMouseOver={(e) => setIshover(item)}
-                onClick={(e) => setIshover(null)}
               />
               {item === isHover && (
                 <div className="overlay" data-aos="zoom-out">
