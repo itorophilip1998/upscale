@@ -651,8 +651,9 @@ ul {
 
 @media only screen and (max-width: 768px) {
   .curveline {
-      display: none
-    }
+    display: none
+  }
+
   // .ourwork .img-box .overlay {
   //   position: absolute;
   //   width: 321.6px;
@@ -847,4 +848,19 @@ ul {
 .littleInfo {
   color: #DDDDDD;
   // margin
+}
+
+.slideTextDetails {
+  position: absolute;
+  margin-top: -50px;
+  font-size: 10px;
+  right: 10px;
+
+}
+
+.navbar-close-icon {
+  color: #9c9797 !important;
+    font-family: 'Oxygen';
+  font-size: 28px;
+  font-weight: 500;
 }

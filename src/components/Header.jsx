@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 /* eslint-disable */
 function Header() {
+  const [hambuger, setHambuger] = useState(false);
   return (
     <div className="header w-100">
       <nav className="navbar navbar-expand-sm py-4 navbar-dark  fixed-top w-100">
@@ -9,17 +10,24 @@ function Header() {
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
             Advisory
           </a>
-          <button
-            className="navbar-toggler d-lg-none"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon text-white"></span>
-          </button>
+          {
+            <button
+              className="navbar-toggler d-lg-none"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onClick={e=>setHambuger(!hambuger)}
+            >
+              {!hambuger ? (
+                <span className="navbar-toggler-icon"></span>
+              ) : (
+                <span className="navbar-close-icon">x</span>
+              )}
+            </button>
+          }
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ml-auto ">
               <li className="nav-item active">

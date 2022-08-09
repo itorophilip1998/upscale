@@ -36,6 +36,9 @@ function AboutBox(props) {
             className="side_text slide_text_animation mt-4 p-0 pl-4 pt-4"
             data-aos="fade-left"
           >
+            <small className="slideTextDetails">
+              {item.key+1} of {2}
+            </small>
             {item.side_text}
           </p>
         </div>
