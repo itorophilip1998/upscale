@@ -16,7 +16,7 @@ function Header() {
               type="button"
               data-toggle="collapse"
               data-target="#collapsibleNavId"
-              aria-controls="collapsibleNavId"ttt
+              aria-controls="collapsibleNavId"
               aria-expanded="false"
               aria-label="Toggle navigation"
               onClick={e=>setHambuger(!hambuger)}

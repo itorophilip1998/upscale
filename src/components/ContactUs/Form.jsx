@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 /* eslint-disable */
 
@@ -9,39 +9,46 @@ const list = [
   "SAAS Development",
 ];
 function Form() {
-  const form = useRef();
+  // const form = useRef();
   const [select, setForm] = useState(null);
   const setFormData = (e) => {
     const { value, name } = e.target;
     setForm({
-      ...form,
+      ...select,
       [name]: value,
     });
+          console.log(select);
+
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
-    emailjs
-      .sendForm(
-        "service_zmw52zc",
-        "template_lufmaul",
-        form.current,
-        "_J49LBHIQ4HI3uTGV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    
+    // console.log(form.current);
+    // emailjs
+    //   .sendForm(
+    //     "service_zmw52zc",
+    //     "template_lufmaul",
+    //     form.current,
+    //     "_J49LBHIQ4HI3uTGV"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
   const setOption = (item) => {
-    let message = document.getElementById("message");
+    // let message = document.getElementById("message");
     // message.value += " " + item;
-    console.log(message.value)
+    // console.log(message.value)
+    setForm({
+      ...select,
+      option: item,
+    });
   }
   return (
     <div className="form m-0" data-aos="fade-right" data-aos-delay="400">
@@ -58,13 +65,14 @@ function Form() {
               data-aos-delay="600"
               key={key}
               onClick={(e) => setOption(item)}
-              name="option"
+              // name="option"
+              // type="button"
             >
               <h3>{item}</h3>
             </button>
           ))}
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={sendEmail}>
         <div className="form-container">
           <div className="input">
             <label htmlFor="user_name">Name</label>
@@ -74,7 +82,7 @@ function Form() {
               className="name"
               name="user_name"
               onChange={setFormData}
-              value={form.user_name}
+              // value={form.user_name}
             />
           </div>
 
@@ -88,7 +96,7 @@ function Form() {
               placeholder=""
               name="user_email"
               onChange={setFormData}
-              value={form.user_email}
+              // value={form.user_email}
             />
           </div>
           <div className="input">
@@ -101,7 +109,7 @@ function Form() {
               placeholder=""
               name="user_phone"
               onChange={setFormData}
-              value={form.user_phone}
+              // value={form.user_phone}
             />
           </div>
 
@@ -117,7 +125,7 @@ function Form() {
               rows="3"
               name="message"
               onChange={setFormData}
-              value={form.message}
+              // value={form.message}
             ></textarea>
           </div>
         </div>
