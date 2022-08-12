@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 /* eslint-disable */
 
 const list = [
@@ -23,7 +23,7 @@ function Form() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     // console.log(form.current);
     // emailjs
     //   .sendForm(
