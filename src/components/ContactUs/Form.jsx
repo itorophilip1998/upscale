@@ -1,28 +1,44 @@
 import React, { useState } from "react";
 // import emailjs from "@emailjs/browser";
+import axios from "axios";
 /* eslint-disable */
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const list = [
   "Front-End Development",
   "Backend Development",
   "UI/UX Design",
   "SAAS Development",
 ];
+
 function Form() {
   // const form = useRef();
   const [select, setForm] = useState(null);
+  const [loader, setLoader] = useState(false);
   const setFormData = (e) => {
     const { value, name } = e.target;
     setForm({
       ...select,
       [name]: value,
     });
-          console.log(select);
-
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoader(true);
+    axios
+      .post(url, select)
+      .then((result) => {
+        setLoader(false);
+        toast.success("Successfully send!");
+      })
+      .catch((err) => {
+        setLoader(false);
+        toast.error("Unable to send!");
+      });
+  
+      setLoader(false);
+    
 
     // console.log(form.current);
     // emailjs
@@ -42,14 +58,11 @@ function Form() {
     //   );
   };
   const setOption = (item) => {
-    // let message = document.getElementById("message");
-    // message.value += " " + item;
-    // console.log(message.value)
     setForm({
       ...select,
       option: item,
     });
-  }
+  };
   return (
     <div className="form m-0" data-aos="fade-right" data-aos-delay="400">
       <span className="headForm my-4 d-none d-md-block text-left">
