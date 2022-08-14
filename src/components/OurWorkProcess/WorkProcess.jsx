@@ -2,7 +2,7 @@ import React from "react";
 
 function WorkProcess({ item, index }) {
   return (
-    <div className="ourworkprocess-box col-lg-4  d-md-block d-none">
+    <div className="ourworkprocess-box col-lg-4  d-lg-block d-none">
       {!item.isTop && (
         <>
           <div className="items-index ">{index + 1}</div>

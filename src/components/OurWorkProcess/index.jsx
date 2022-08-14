@@ -30,7 +30,7 @@ function OurWorkProcess() {
         <img src="/images/curveline.png" alt="" className="curveline" />
       </div>
 
-      <div className="m-mode m-0">
+      <div className="m-mode m-0 ">
         {list &&
           list.map((item, key) => (
             <WorkProcessMobile key={key} index={key} item={item} />
