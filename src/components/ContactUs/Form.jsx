@@ -80,7 +80,7 @@ function Form() {
               className="name"
               name="user_name"
               onChange={setFormData}
-              value={"itoro"}
+              // value={"itoro"}
             />
           </div>
 
@@ -94,7 +94,7 @@ function Form() {
               placeholder=""
               name="user_email"
               onChange={setFormData}
-              value={"itorophilip1998@gmail.com"}
+              // value={"itorophilip1998@gmail.com"}
             />
           </div>
           <div className="input">
@@ -107,7 +107,7 @@ function Form() {
               placeholder=""
               name="user_phone"
               onChange={setFormData}
-              value={"090671621"}
+              // value={"090671621"}
             />
           </div>
 
@@ -123,7 +123,7 @@ function Form() {
               rows="3"
               name="message"
               onChange={setFormData}
-              value={`  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis odio, deserunt consequuntur delectus fugit culpa possimus praesentium sapiente, id earum voluptatem harum ratione aut totam vero assumenda aspernatur?   `}
+              // value={`  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis odio, deserunt consequuntur delectus fugit culpa possimus praesentium sapiente, id earum voluptatem harum ratione aut totam vero assumenda aspernatur?   `}
             ></textarea>
           </div>
           {/* {console.log(loader)} */}
