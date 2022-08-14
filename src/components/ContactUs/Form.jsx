@@ -140,17 +140,26 @@ function Form() {
               // value={form.message}
             ></textarea>
           </div>
-          {console.log(loader)}
+          {/* {console.log(loader)} */}
         </div>
-        {!loader && (
-          <div>
-            <button className="btn-send my-4 d-block d-md-none w-100">
-              Send
-            </button>
-            <button className="btn-send my-4 d-none d-md-block">Send</button>
-          </div>
-        )}
+
+        <div>
+          <button
+            disabled={!loader ? false : true}
+            className="btn-send my-4 d-block d-md-none w-100 "
+          >
+            {!loader?"Send":"Please wait..."}
+          </button>
+          <button
+            disabled={!loader ? false : true}
+            className="btn-send my-4 d-none d-md-block "
+          >
+            {!loader?"Send":"Please wait..."}
+          </button>
+        </div>
       </form>
+
+      <ToastContainer />
     </div>
   );
 }
