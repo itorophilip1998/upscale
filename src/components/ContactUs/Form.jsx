@@ -26,11 +26,16 @@ function Form() {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
+    if (!select?.option) { 
+        setLoader(false);
+      return toast.warning("Select what you will like to do");
+    }
+  
     axios
       .post(url, select)
       .then((result) => {
         setLoader(false);
-        toast("Successfully send!");
+        toast.success("Successfully send!");
       })
       .catch((err) => {
         setLoader(false);
@@ -148,18 +153,28 @@ function Form() {
             disabled={!loader ? false : true}
             className="btn-send my-4 d-block d-md-none w-100 "
           >
-            {!loader?"Send":"Please wait..."}
+            {!loader ? "Send" : "Please wait..."}
           </button>
           <button
             disabled={!loader ? false : true}
             className="btn-send my-4 d-none d-md-block "
           >
-            {!loader?"Send":"Please wait..."}
+            {!loader ? "Send" : "Please wait..."}
           </button>
         </div>
       </form>
 
-      <ToastContainer />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
