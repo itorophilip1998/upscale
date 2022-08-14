@@ -22,7 +22,7 @@ function Form() {
       [name]: value,
     });
   };
-  const url = "https://upscale-be.herokuapp.com/send-mail";
+  const url = "https://upscale-be.herokuapp.com/api/send-mail";
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
