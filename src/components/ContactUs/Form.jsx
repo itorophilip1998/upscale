@@ -22,7 +22,7 @@ function Form() {
       [name]: value,
     });
   };
-  const url = "http://localhost:8000/api/send-mail";
+  const url = "https://upscale-be.herokuapp.com/api/send-mail";
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
@@ -41,25 +41,6 @@ function Form() {
         setLoader(false);
         toast.error("Unable to send!");
       });
-
-    // setLoader(false);
-
-    // console.log(form.current);
-    // emailjs
-    //   .sendForm(
-    //     "service_zmw52zc",
-    //     "template_lufmaul",
-    //     form.current,
-    //     "_J49LBHIQ4HI3uTGV"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
   };
   const setOption = (item) => {
     setForm({
