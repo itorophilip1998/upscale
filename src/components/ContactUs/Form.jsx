@@ -22,7 +22,7 @@ function Form() {
       [name]: value,
     });
   };
-
+  const url = "http://localhost:8000/api/send-mail";
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
@@ -30,15 +30,14 @@ function Form() {
       .post(url, select)
       .then((result) => {
         setLoader(false);
-        toast.success("Successfully send!");
+        toast("Successfully send!");
       })
       .catch((err) => {
         setLoader(false);
         toast.error("Unable to send!");
       });
-  
-      setLoader(false);
-    
+
+    // setLoader(false);
 
     // console.log(form.current);
     // emailjs
@@ -141,10 +140,16 @@ function Form() {
               // value={form.message}
             ></textarea>
           </div>
+          {console.log(loader)}
         </div>
-
-        <button className="btn-send my-4 d-block d-md-none w-100">Send</button>
-        <button className="btn-send my-4 d-none d-md-block">Send</button>
+        {!loader && (
+          <div>
+            <button className="btn-send my-4 d-block d-md-none w-100">
+              Send
+            </button>
+            <button className="btn-send my-4 d-none d-md-block">Send</button>
+          </div>
+        )}
       </form>
     </div>
   );
