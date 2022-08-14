@@ -22,15 +22,15 @@ function Form() {
       [name]: value,
     });
   };
-  const url = "https://upscale-be.herokuapp.com/api/send-mail";
+  const url = "https://upscale-be.herokuapp.com/send-mail";
   const sendEmail = (e) => {
     e.preventDefault();
     setLoader(true);
-    if (!select?.option) { 
-        setLoader(false);
+    if (!select?.option) {
+      setLoader(false);
       return toast.warning("Select what you will like to do");
     }
-  
+
     axios
       .post(url, select)
       .then((result) => {
@@ -80,7 +80,7 @@ function Form() {
               className="name"
               name="user_name"
               onChange={setFormData}
-              // value={form.user_name}
+              value={"itoro"}
             />
           </div>
 
@@ -94,7 +94,7 @@ function Form() {
               placeholder=""
               name="user_email"
               onChange={setFormData}
-              // value={form.user_email}
+              value={"itorophilip1998@gmail.com"}
             />
           </div>
           <div className="input">
@@ -107,7 +107,7 @@ function Form() {
               placeholder=""
               name="user_phone"
               onChange={setFormData}
-              // value={form.user_phone}
+              value={"090671621"}
             />
           </div>
 
@@ -123,7 +123,7 @@ function Form() {
               rows="3"
               name="message"
               onChange={setFormData}
-              // value={form.message}
+              value={`  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis odio, deserunt consequuntur delectus fugit culpa possimus praesentium sapiente, id earum voluptatem harum ratione aut totam vero assumenda aspernatur?   `}
             ></textarea>
           </div>
           {/* {console.log(loader)} */}
