@@ -16,7 +16,7 @@ function ContactUs() {
         <div className="col-md-4">
           <div className="littleInfo mt-5">
             <span>Tel: +4917674865418</span> <br />
-            <span className="pt-5">Email: info@upscaleadvisory.de</span>
+            <span className="pt-5">Email: support@upscaleadvisory.de</span>
             {/* {` </br>`} */}
           </div>
           <div className="headInfo" data-aos="fade-left" data-aos-delay="600">
