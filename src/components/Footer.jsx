@@ -1,4 +1,5 @@
 import React from "react";
+import { Facebook, LinkedIn, Twitter, Instagram } from "@material-ui/icons";
 
 function Footer() {
   return (
@@ -28,7 +29,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <img src="/images/discover.png" alt="" />
+              <img src="/images/location.png" alt="" />
               <a href="/" className="nation">
                 {" "}
                 Düsseldorf
@@ -36,33 +37,33 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-md-6 follow">
+        <div className="col-md-6 follow ">
           <span className="headText">Follow Us</span>
-          <ul className="row m-0 mt-4">
+          <ul className="row m-0 mt-4 mb-5">
             <li className="mr-md-2 ">
               <a href="https://www.instagram.com/upscale.advisory">
-                <img src="/images/instagram.png" alt="" />
+                <Instagram className="svgIco" />
               </a>
             </li>
             <li className="mx-md-2">
               <a href="https://twitter.com/upscaleadvisory">
-                <img src="/images/Vector.png" alt="" />
+                <Twitter className="svgIco" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a
-                href="https://www.facebook.com/upscale.advisory.1"
-              >
-                <img src="/images/Vector (5).png" alt="" />
+              <a href="https://www.facebook.com/upscale.advisory.1">
+                <Facebook className="svgIco" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a href="/">
-                <img src="/images/Vector (6).png" alt="" />
+              <a href="https://www.linkedin.com/company/upscale-advisory/" >
+                <LinkedIn className="svgIco" />
               </a>
             </li>
           </ul>
-          <small className="footer-upscale">&copy; 2022 Upscale Advisory</small>
+          <div className="footer-upscale pb-5 ">
+            &copy; 2022 Upscale Advisory
+          </div>
         </div>
       </div>
     </div>
