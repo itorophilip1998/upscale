@@ -68,9 +68,9 @@ export const ourprocess = [
         isTop: true
     },
     {
-        head: "Execution and Testing",
-        text: "The Execution stage involves using the most suitable programming language to create the front end, back end , databases depending on the particular project. Here we also create graphics, audio effects and texts  for your app. We carry out the first rounds of tests in this stage to ensure that all agreed requirements are properly implemented.",
-        img: "line6.png",
+        head: "Continuous support and Improvement",
+        text: "Even after the end of our work together, we are always there to happily support you in case you have questions or further needs to improve your application. Usually, we work with our clients after deployment. Implementing newer versions of the app and adding new features.",
+        img: "line4.png",
         isTop: false
     },
     {
@@ -79,10 +79,11 @@ export const ourprocess = [
         img: "line5.png",
         isTop: false
     },
+  
     {
-        head: "Continuous support and Improvement",
-        text: "Even after the end of our work together, we are always there to happily support you in case you have questions or further needs to improve your application. Usually, we work with our clients after deployment. Implementing newer versions of the app and adding new features.",
-        img: "line4.png",
+        head: "Execution and Testing",
+        text: "The Execution stage involves using the most suitable programming language to create the front end, back end , databases depending on the particular project. Here we also create graphics, audio effects and texts  for your app. We carry out the first rounds of tests in this stage to ensure that all agreed requirements are properly implemented.",
+        img: "line6.png",
         isTop: false
     },
 ]

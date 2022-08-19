@@ -1,17 +1,23 @@
 import React from "react";
-import { Facebook, LinkedIn, Twitter, Instagram } from "@material-ui/icons";
+// import { Facebook, LinkedIn, Twitter, Instagram } from "@material-ui/icons";
 
 function Footer() {
   return (
     <div className="footer">
       <div className=" row m-0 ">
-        <div className="col-md-3 br text-md-right text-center  pick-footer ">
+        <div className="col-md-3  br text-md-right text-center  pick-footer ">
           <a className="navbar-brand" href="/">
             <img src="/images/logo.png" alt="" className="logo" /> Upscale
             Advisory
           </a>
+
+          <div className="littleInfo my-5 p-0 pb-4">
+            <small>Tel: +4917674865418</small> <br />
+            <small>Email: support@upscaleadvisory.de</small>
+            {/* {` </br>`} */}
+          </div>
         </div>
-        <div className="col-md-3 br">
+        <div className="col-md-3 br ">
           <span className="headText">Offices</span>
           <ul className="mt-md-4">
             <li className="my-5">
@@ -42,26 +48,26 @@ function Footer() {
           <ul className="row m-0 mt-4 mb-5">
             <li className="mr-md-2 ">
               <a href="https://www.instagram.com/upscale.advisory">
-                <Instagram className="svgIco" />
+                <img src="/images/footer/instagram.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
               <a href="https://twitter.com/upscaleadvisory">
-                <Twitter className="svgIco" />
+                <img src="/images/footer/twitter.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
               <a href="https://www.facebook.com/upscale.advisory.1">
-                <Facebook className="svgIco" />
+                <img src="/images/footer/facebook.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a href="https://www.linkedin.com/company/upscale-advisory/" >
-                <LinkedIn className="svgIco" />
+              <a href="https://www.linkedin.com/company/upscale-advisory/">
+                <img src="/images/footer/linkedin.png" alt="" />
               </a>
             </li>
           </ul>
-          <div className="footer-upscale pb-5 ">
+          <div className="footer-upscale ">
             &copy; 2022 Upscale Advisory
           </div>
         </div>

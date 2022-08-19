@@ -13,7 +13,16 @@ const list = [
 
 function Form() {
   // const form = useRef();
-  const [select, setForm] = useState(null);
+  const [select, setForm] = useState(
+    {
+      user_email: '',
+      user_name: '',
+      user_phone: '',
+      option: '',
+      message:''
+      
+    }
+  );
   const [loader, setLoader] = useState(false);
   const setFormData = (e) => {
     const { value, name } = e.target;
@@ -36,6 +45,7 @@ function Form() {
       .post(url, select)
       .then((result) => {
         setLoader(false);
+        setForm(null)
         toast.success("Successfully send!");
       })
       .catch((err) => {
@@ -95,7 +105,7 @@ function Form() {
               placeholder=""
               name="user_email"
               onChange={setFormData}
-              // value={"itorophilip1998@gmail.com"}
+              value={select.user_email}
             />
           </div>
           <div className="input">
@@ -108,7 +118,7 @@ function Form() {
               placeholder=""
               name="user_phone"
               onChange={setFormData}
-              // value={"090671621"}
+              value={"090671621"}
             />
           </div>
 

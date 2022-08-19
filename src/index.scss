@@ -680,7 +680,7 @@ ul {
 
   .footer {
     .pick-footer {
-      height: 50px;
+      max-height: 150px;
 
 
     }
@@ -690,7 +690,7 @@ ul {
     }
 
     .follow {
-      height: 150px !important;
+      max-height: 220px !important;
 
       li {
         margin: 10px auto;
@@ -868,6 +868,6 @@ ul {
 }
 
 .svgIco{
-  font-size: 40px !important;
-  color: #DDDDDD;
+  // font-size: 40px !important;
+  // color: #DDDDDD;
 }
