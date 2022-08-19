@@ -47,29 +47,43 @@ function Footer() {
           <span className="headText">Follow Us</span>
           <ul className="row m-0 mt-4 mb-5">
             <li className="mr-md-2 ">
-              <a href="https://www.instagram.com/upscale.advisory">
+              <a
+                href="https://www.instagram.com/upscale.advisory"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
                 <img src="/images/footer/instagram.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a href="https://twitter.com/upscaleadvisory">
+              <a
+                href="https://twitter.com/upscaleadvisory"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
                 <img src="/images/footer/twitter.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a href="https://www.facebook.com/upscale.advisory.1">
+              <a
+                href="https://www.facebook.com/upscale.advisory.1"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
                 <img src="/images/footer/facebook.png" alt="" />
               </a>
             </li>
             <li className="mx-md-2">
-              <a href="https://www.linkedin.com/company/upscale-advisory/">
+              <a
+                href="https://www.linkedin.com/company/upscale-advisory/"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
                 <img src="/images/footer/linkedin.png" alt="" />
               </a>
             </li>
           </ul>
-          <div className="footer-upscale ">
-            &copy; 2022 Upscale Advisory
-          </div>
+          <div className="footer-upscale ">&copy; 2022 Upscale Advisory</div>
         </div>
       </div>
     </div>

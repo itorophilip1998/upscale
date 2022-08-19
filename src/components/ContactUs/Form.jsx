@@ -44,13 +44,14 @@ function Form() {
     axios
       .post(url, select)
       .then((result) => {
-        setLoader(false);
-        setForm(null)
-        toast.success("Successfully send!");
+        setLoader(false); 
+        toast.success(
+          "Successfully sent. One of our managers will contact you within 24 hours"
+        );
       })
       .catch((err) => {
         setLoader(false);
-        toast.error("Unable to send!");
+        toast.error("Unable to send, Please check your details and resend");
       });
   };
   const setOption = (item) => {
@@ -69,9 +70,9 @@ function Form() {
         {list &&
           list.map((item, key) => (
             <button
-              className="listedItem mr-auto "
-              data-aos="zoom-in"
-              data-aos-delay="600"
+              className={`listedItem mr-auto ${select?.option===item? 'isSelected':''} `}
+              // data-aos="zoom-in"
+              // data-aos-delay="600"
               key={key}
               onClick={(e) => setOption(item)}
               // name="option"
@@ -91,7 +92,7 @@ function Form() {
               className="name"
               name="user_name"
               onChange={setFormData}
-              // value={"itoro"}
+              value={select?.user_name}
             />
           </div>
 
@@ -105,7 +106,7 @@ function Form() {
               placeholder=""
               name="user_email"
               onChange={setFormData}
-              value={select.user_email}
+              value={select?.user_email}
             />
           </div>
           <div className="input">
@@ -118,7 +119,7 @@ function Form() {
               placeholder=""
               name="user_phone"
               onChange={setFormData}
-              value={"090671621"}
+              value={select?.user_phone}
             />
           </div>
 
@@ -134,7 +135,7 @@ function Form() {
               rows="3"
               name="message"
               onChange={setFormData}
-              // value={`  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis odio, deserunt consequuntur delectus fugit culpa possimus praesentium sapiente, id earum voluptatem harum ratione aut totam vero assumenda aspernatur?   `}
+              value={select?.message}
             ></textarea>
           </div>
           {/* {console.log(loader)} */}
@@ -158,14 +159,14 @@ function Form() {
 
       <ToastContainer
         position="bottom-right"
-        autoClose={2000}
+        autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
-        closeOnClick
-        rtl={false}
+        // closeOnClick
+        rtl={true}
         pauseOnFocusLoss
-        draggable
-        pauseOnHover
+        // draggable
+        // pauseOnHover
       />
     </div>
   );
