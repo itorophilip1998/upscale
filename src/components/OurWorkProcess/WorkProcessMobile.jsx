@@ -2,7 +2,7 @@ import React from "react";
 
 function WorkProcessMobile({ item, index }) {
   return (
-    <div className="d-lg-none m-0">
+    <div className="d-lg-none m-0 container">
       <div className="row m-0">
         <div className="col p-0">
           <div className="row m-0 ">
