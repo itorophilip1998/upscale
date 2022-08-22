@@ -11,7 +11,7 @@ import OurWorkProcess from './components/OurWorkProcess';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import ScrollToTop from './components/ScrollButton';
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 // import ScrollToTop from "react-scroll-to-top";
 
 function App() {
