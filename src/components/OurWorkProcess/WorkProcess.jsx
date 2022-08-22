@@ -5,7 +5,7 @@ function WorkProcess({ item, index }) {
     <div className="ourworkprocess-box col-lg-4  d-lg-block d-none">
       {!item.isTop && (
         <>
-          <div className="items-index ">{index + 1}</div>
+          {/* <div className="items-index ">{index + 1}</div> */}
 
           <img
             src={`/images/${item.img}`}
