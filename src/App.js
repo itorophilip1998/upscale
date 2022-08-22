@@ -10,8 +10,9 @@ import About from './components/About';
 import OurWorkProcess from './components/OurWorkProcess';
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from './components/ScrollButton';
+// import "aos/dist/aos.css";
+// import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   useEffect(() => {
@@ -28,7 +29,8 @@ function App() {
       <OurWorks />
       <OurWorkProcess/>
       <ContactUs />  
-      <ScrollToTop smooth color="white" className="bg-transparent"/>
+      {/* <ScrollToTop smooth color="white" className="bg-transparent"/> */}
+      <ScrollToTop/>
       <Footer />
     </div>
   );

@@ -2,7 +2,11 @@ import React from "react";
 
 function Hero() {
   const scrollDown = () => {
-    window.scrollTo(0, 400);
+    // window.scrollTo(0, 400);
+     window.scrollTo({
+       top: 500,
+       behavior: "smooth",
+     });
   };
   return (
     <div className="hero">
