@@ -67,25 +67,27 @@ export const ourprocess = [
         img: "line3.png",
         isTop: true
     },
-    {
-        head: "Continuous support and Improvement",
-        text: "Even after the end of our work together, we are always there to happily support you in case you have questions or further needs to improve your application. Usually, we work with our clients after deployment. Implementing newer versions of the app and adding new features.",
-        img: "line4.png",
+     {
+        head: "Execution and Testing",
+        text: "The Execution stage involves using the most suitable programming language to create the front end, back end , databases depending on the particular project. Here we also create graphics, audio effects and texts  for your app. We carry out the first rounds of tests in this stage to ensure that all agreed requirements are properly implemented.",
+         img: "line4.png",
         isTop: false
     },
+   
     {
         head: "Deployment",
         text: "Publishing your app is the final step in our development process. We work with you to create an entry in the Apple App Store (iOS) and Google Play Store (Android). We publish your app in  stages, so that initially only selected users can test the app or the app initially goes into beta status. After the final release, the app is then immediately available to all others.",
         img: "line5.png",
         isTop: false
     },
-  
-    {
-        head: "Execution and Testing",
-        text: "The Execution stage involves using the most suitable programming language to create the front end, back end , databases depending on the particular project. Here we also create graphics, audio effects and texts  for your app. We carry out the first rounds of tests in this stage to ensure that all agreed requirements are properly implemented.",
+     {
+        head: "Continuous support and Improvement",
+        text: "Even after the end of our work together, we are always there to happily support you in case you have questions or further needs to improve your application. Usually, we work with our clients after deployment. Implementing newer versions of the app and adding new features.",
         img: "line6.png",
         isTop: false
     },
+  
+   
 ]
 
 export const imgList = [
