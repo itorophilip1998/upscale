@@ -11,7 +11,7 @@ function Footer() {
             Advisory
           </a>
 
-          <div className="littleInfo my-5 p-0 pb-4">
+          <div className="littleInfo d-none d-md-block my-5 p-0 pb-4">
             <small>Tel: +4917674865418</small> <br />
             <small>Email: support@upscaleadvisory.de</small>
             {/* {` </br>`} */}
@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className="col-md-3 br ">
           <span className="headText">Offices</span>
-          <ul className="mt-md-4">
+          <ul className="mt-md-4 ">
             <li className="my-5">
               <img src="/images/location.png" alt="" />
               <a href="/" className="nation">
@@ -44,7 +44,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col-md-6 follow ">
-          <span className="headText">Follow Us</span>
+          <div className="headText text-md-left">Follow Us</div>
           <ul className="row m-0 mt-4 mb-5">
             <li className="mr-md-2 ">
               <a
@@ -83,6 +83,11 @@ function Footer() {
               </a>
             </li>
           </ul>
+          <div className="littleInfo d-block d-md-none text-center p-0 pb-4">
+            <small>Tel: +4917674865418</small> <br />
+            <small>Email: support@upscaleadvisory.de</small>
+            {/* {` </br>`} */}
+          </div>
           <div className="footer-upscale ">&copy; 2022 Upscale Advisory</div>
         </div>
       </div>

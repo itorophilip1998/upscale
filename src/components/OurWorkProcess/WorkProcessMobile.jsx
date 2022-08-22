@@ -5,8 +5,8 @@ function WorkProcessMobile({ item, index }) {
     <div className="d-lg-none m-0">
       <div className="row m-0">
         <div className="col p-0">
-          <div className="row m-0">
-            <div className="col-3 p-0" data-aos="fade-left">
+          <div className="row m-0 ">
+            <div className="col-3 p-0 pb-4" data-aos="fade-left">
               <img src={`/images/monileline/line${index + 1}.png`} alt="" />
             </div>
             <div className="col-9 p-0 text-vite py-2" data-aos="fade-right">
