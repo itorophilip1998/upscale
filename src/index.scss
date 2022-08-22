@@ -659,6 +659,7 @@ ul {
     display: none
   }
 
+  
   // .ourwork .img-box .overlay {
   //   position: absolute;
   //   width: 321.6px;
@@ -679,11 +680,16 @@ ul {
 
   .hero {
     p {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 28px;
+    font-family: 'Oxygen' !important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      font-size: 20px !important;
+      line-height: 28px !important;
+      /* or 156% */
+    
+      text-align: center;
+    
+      color: #F5F5F8;
     }
   }
 
