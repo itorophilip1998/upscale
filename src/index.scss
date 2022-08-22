@@ -659,7 +659,7 @@ ul {
     display: none
   }
 
-  
+
   // .ourwork .img-box .overlay {
   //   position: absolute;
   //   width: 321.6px;
@@ -673,22 +673,22 @@ ul {
   //   justify-content: center;
   //   cursor: pointer;
   // }
-     .btn-send {
-       width: 100% !important;
-       position: relative !important;
-     }
+  .btn-send {
+    width: 100% !important;
+    position: relative !important;
+  }
 
   .hero {
     p {
-    font-family: 'Oxygen' !important;
+      font-family: 'Oxygen' !important;
       font-style: normal !important;
       font-weight: 300 !important;
       font-size: 20px !important;
       line-height: 28px !important;
       /* or 156% */
-    
+
       text-align: center;
-    
+
       color: #F5F5F8;
     }
   }
@@ -805,7 +805,7 @@ ul {
     height: 219px;
     text-align: center;
     background-position: center;
-    background-color:#101121;
+    background-color: #101121;
 
     p {
       font-family: 'Oxygen';
@@ -819,9 +819,10 @@ ul {
       color: #FFFFFF;
     }
 
-   
+
   }
-// media ends
+
+  // media ends
 
   .hero {
     background: none;
@@ -937,3 +938,8 @@ ul {
     background: #191b3a !important;
   }
 }
+
+// .text-muted {
+//   color: rgb(133, 132, 132) !important;
+//   text-decoration: underline !important;
+// }

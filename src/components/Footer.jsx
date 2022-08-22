@@ -18,15 +18,8 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-3 br ">
-          <span className="headText">Offices</span>
-          <ul className="mt-md-4 ">
-            <li className="my-5">
-              <img src="/images/location.png" alt="" />
-              <a href="/" className="nation">
-                {" "}
-                Netherlands
-              </a>
-            </li>
+          <span className="headText  text-center text-md-left">Offices</span>
+          <ul className="mt-md-4  text-center text-md-left">
             <li className="my-5">
               <img src="/images/location.png" alt="" />
               <a href="/" className="nation">
@@ -39,6 +32,13 @@ function Footer() {
               <a href="/" className="nation">
                 {" "}
                 Düsseldorf
+              </a>
+            </li>
+            <li className="my-5">
+              <img src="/images/location.png" alt="" />
+              <a href="/" className="nation">
+                {" "}
+                Netherlands
               </a>
             </li>
           </ul>
