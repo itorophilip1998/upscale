@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className="hero">
       <p>
-        <div className="mb-4 p-2" data-aos="fade-down" data-aos-delay="600">
+        <div className="mb-4 p-md-2 p-4" data-aos="fade-down" data-aos-delay="600">
           Your professional agency for mobile and web based
           <strong> software development</strong>
         </div>
