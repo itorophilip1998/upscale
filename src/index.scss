@@ -672,6 +672,10 @@ ul {
   //   justify-content: center;
   //   cursor: pointer;
   // }
+     .btn-send {
+       width: 100% !important;
+       position: relative !important;
+     }
 
   .hero {
     p {
@@ -808,8 +812,10 @@ ul {
 
       color: #FFFFFF;
     }
-  }
 
+   
+  }
+// media ends
 
   .hero {
     background: none;

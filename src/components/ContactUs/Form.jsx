@@ -13,13 +13,16 @@ const list = [
 
 function Form() {
   // const form = useRef();
-  const [select, setForm] = useState({
-    user_email: "",
-    user_name: "",
-    user_phone: "",
-    option: "",
-    message: "",
-  });
+  const [select, setForm] = useState(
+    {
+      user_email: '',
+      user_name: '',
+      user_phone: '',
+      option: '',
+      message:''
+      
+    }
+  );
   const [loader, setLoader] = useState(false);
   const setFormData = (e) => {
     const { value, name } = e.target;
@@ -41,7 +44,7 @@ function Form() {
     axios
       .post(url, select)
       .then((result) => {
-        setLoader(false);
+        setLoader(false); 
         toast.success(
           "Successfully sent. One of our managers will contact you within 24 hours"
         );
@@ -67,9 +70,7 @@ function Form() {
         {list &&
           list.map((item, key) => (
             <button
-              className={`listedItem mr-auto ${
-                select?.option === item ? "isSelected" : ""
-              } `}
+              className={`listedItem mr-auto ${select?.option===item? 'isSelected':''} `}
               // data-aos="zoom-in"
               // data-aos-delay="600"
               key={key}
@@ -141,20 +142,18 @@ function Form() {
         </div>
 
         <div>
-          <div className="row m-0">
-            <button
-              disabled={!loader ? false : true}
-              className="btn-send my-4 d-block d-md-none col-12 mx-auto "
-            >
-              {!loader ? "Send" : "Please wait..."}
-            </button>
-            <button
-              disabled={!loader ? false : true}
-              className="btn-send my-4 d-none d-md-block "
-            >
-              {!loader ? "Send" : "Please wait..."}
-            </button>
-          </div>
+          <button
+            disabled={!loader ? false : true}
+            className="btn-send my-4 d-block d-md-none  mx-auto "
+          >
+            {!loader ? "Send" : "Please wait..."}
+          </button>
+          <button
+            disabled={!loader ? false : true}
+            className="btn-send my-4 d-none d-md-block "
+          >
+            {!loader ? "Send" : "Please wait..."}
+          </button>
         </div>
       </form>
 
