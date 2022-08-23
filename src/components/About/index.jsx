@@ -28,19 +28,8 @@ const About = () => {
       </Carousel>
 
       <div className="desktopviewAbout d-none d-md-block">
-        <Carousel
-          autoPlay
-          infiniteLoop
-          shaowStatus={true}
-          showIndicators={false}
-          labels={"false"}
-          showThumbs={false}
-          showArrows={false}
-          interval={6000}
-          className="d-md-none"
-        >
-          <AboutBox item={list} />
-        </Carousel>
+        
+          <AboutBox item={list} /> 
       </div>
     </div>
   );

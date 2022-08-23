@@ -4,7 +4,11 @@ function AboutBox(props) {
   const [item, setItem] = useState(props?.item[0]);
   useEffect(() => {
     setItem(props?.item[0]);
-  }, []); 
+    setTimeout(() => {
+      if (state === 0) setItem(props?.item[1]);
+      else setItem(props?.item[0]);
+    }, 6000);
+  }, []);
   let pushState = (state) => {
     if (state === 0) setItem(props?.item[1]);
     else setItem(props?.item[0]);
@@ -37,7 +41,7 @@ function AboutBox(props) {
             data-aos="fade-left"
           >
             <small className="slideTextDetails">
-              {item.key+1} of {2}
+              {item.key + 1} of {2}
             </small>
             {item.side_text}
           </p>
