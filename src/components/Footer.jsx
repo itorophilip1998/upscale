@@ -18,7 +18,7 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-3 br ">
-          <span className="headText  text-center text-md-left">Offices</span>
+          <div className="headText  text-center text-md-left">Offices</div>
           <ul className="mt-md-4  text-center text-md-left">
             <li className="my-5">
               <img src="/images/location.png" alt="" />
