@@ -101,16 +101,15 @@ export const imgList = [
         body:`Front End: React Native \nBackend: Firebase \nDatabase and additional tech: Firebase Database \nProfessionals: 1 UI/UX designer, 2 front end developers, 1 backend developer \nProject Duration: 3 Months`
     },
     {
-        title: `An app that helps Crypto enthusiasts and trades track the market, make trades and convert cryptos to fiat currency.`,
-        body:`Front End: React JS \nBackend:Node JS,  and REST API \nDatabase and additional tech: Postgress, MongoDB \nProfessionals: 1 UI/UX designer, 2 front end developers, 2 backend developers \nProject Duration: 6 Months`
+        title: `A  web and mobile app that helps verified developers across Africa to find verified remote jobs`,
+        body:`Front End: React Native \nBackend:Node JS,  and REST API \nDatabase and additional tech: Postgress, MongoDB \nProfessionals: 1 UI/UX designer, 2 front end developers, 2 backend developers \nProject Duration: 3 Months`
     },
     {
-        title: `An app that helps Crypto enthusiasts and trades track the market, make trades and convert cryptos to fiat currency.`,
-        body:`Front End: React JS \nBackend: SQL and REST API \nDatabase and additional tech: Firebase Database \nProfessionals: 1 UI/UX designer, 2 front end developers, 2  backend developer \nProject Duration: 3 Months`
+        title: `An app that helps artist track how their NFT is performing on different NFT trading platforms`,
+        body:`Front End: Flutter \nBackend:  Firebase,SQL \nDatabase and additional tech: Firebase Database \nProfessionals: 1 UI/UX designer, 2 front end developers, 1 backend developer \nProject Duration: 5 Months`
     },
-    {
+   {
         title: `An app that helps Crypto enthusiasts and trades track the market, make trades and convert cryptos to fiat currency.`,
-        body:`Front End: React JS \nBackend: SQL and REST API \nDatabase and additional tech: Firebase Database \nProfessionals: 1 UI/UX designer, 2 front end developers, 2  backend developer \nProject Duration: 3 Months`
-    }
-
+        body: `Front End: React JS \nBackend: SQL and REST API \nDatabase and additional tech: Firebase Database \nProfessionals: 1 UI/UX designer, 2 front end developers, 2  backend developer \nProject Duration: 3 Months`
+    },
 ]

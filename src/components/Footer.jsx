@@ -31,7 +31,7 @@ function Footer() {
               <img src="/images/location.png" alt="" />
               <a href="/" className="nation">
                 {" "}
-                Düsseldorf
+                Germany
               </a>
             </li>
             <li className="my-5">
