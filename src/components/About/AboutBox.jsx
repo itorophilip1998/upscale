@@ -13,12 +13,12 @@ function AboutBox(props) {
     <div className="about-box py-md-5 p-md-4 text-left mt-4 ">
       <div className="row m-0 py-3">
         <div className="col-md-5 p-0 p-md-2">
-          <img
+          {/* <img
             src={`/images/${item.img}.png`}
             alt=""
             className="rounder "
             data-aos="fade-up"
-          />
+          /> */}
           <h1 className="heading text-white  head1" data-aos="fade-up">
             {item.head}
           </h1>

@@ -1,13 +1,13 @@
 import React from "react";
 
 function Hero() {
-  const scrollDown = () => {
-    // window.scrollTo(0, 400);
-    window.scrollTo({
-      top: 500,
-      behavior: "smooth",
-    });
-  };
+  // const scrollDown = () => {
+  //   // window.scrollTo(0, 400);
+  //   window.scrollTo({
+  //     top: 500,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
     <div className="hero">
       <p>
@@ -19,12 +19,12 @@ function Hero() {
           Your professional agency for mobile and web based
           <strong> software development</strong>
         </div>
-        <img
+        {/* <img
           src="/images/arrow.png"
           alt=""
           className="mt-5 link"
           onClick={scrollDown}
-        />
+        /> */}
       </p>
     </div>
   );
