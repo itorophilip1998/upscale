@@ -20,7 +20,7 @@ const About = () => {
         labels={"false"}
         showThumbs={false}
         showArrows={false}
-        interval={3000}
+        interval={6000}
         className="d-md-none"
       >
         {list &&
